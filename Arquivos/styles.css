@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  margin-top: 0px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.logo img { /* Seletor para a imagem dentro do div.logo */
+    width: 78px; /* Tamanho da logo */
+    height: auto;
+    display: inline-block; /* Importante para controle de imagem */
+    margin-right: 100px; /* Espaço entre a logo e o H1 */
+    margin-left:20px;
+    position: relative;
+    top: 20px;
+}
+
+h1 {
+    color: rgb(9, 73, 13);
+    font-size: 65px;
+    font-family: 'MontSerrat' sans-serif;
+    margin-left: 115px;
+    position: relative; /* Define o contexto para 'top' */
+    top: 70px; 
+    margin-top: -130px;
+    font-weight: bold;
+}
+
+p {
+    color: rgb(12, 79, 17);
+    font-size: 18px;
+    margin-left: 129px;
+    position: relative; /* Define o contexto para 'top' */
+    top: 20px; 
+}
+
+header {
+  width: 100%;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #92df82, #0c7676);
+  color: white;
+  padding: 20px;
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+  
+}
+
+nav {
+    display: flex; /* Torna a nav um contêiner flexível */
+    justify-content: flex-end; /* Opcional: Alinha todos os itens da nav para a direita */
+    align-items: center;
+}     
+
+nav a {
+  position: relative;
+  left: 200px;
+  margin: 0 12px; 
+  font-size: 23px;
+  color: white;
+  font-family: 'Glacial Indifference' sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;  
+  
+}
+
+nav .Home{
+  position: relative;
+  font-size: 23px;
+  left: 195px;
+}
+
+nav .botao-verde {
+  background-color: #6bb75b;
+  font-family: 'Open Sans' sans-serif;
+  font-size: 19px;
+  padding: 15px 40px;
+  border-radius: 15px;
+  margin-left: 14px;
+  white-space: nowrap;
+}
+
+#logo {
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: relative; /* Torna a nav um contêiner flexível */
+    justify-content: flex-end; /* Opcional: Alinha todos os itens da nav para a direita */
+    align-items: center;
+  }
+
+  nav a {
+  position: relative;
+  left: -18px;
+  margin: 0 12px; 
+  font-size: 23px;
+  color: white;
+  font-family: 'Glacial Indifference' sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: -12px;
+  }
+
+  nav .Home{
+    margin-right: auto;
+    position: relative;
+    left: 260px;
+  }
+
+  nav .botao-verde {
+    flex-direction: column;
+    position:relative;
+    margin-top: 70px;
+    padding: 10px 20px;
+    font-size: 18px;
+    left: -183px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  h1 {
+    position:relative;
+    font-size: 35px;
+    margin-top: -70px;
+    left: -38px;
+  }
+
+  p {
+    position:relative;
+    left: 73px;
+    font-size:12px;
+    margin-left: -18px;
+    top: 43px;
+  }
+
+  .logo img {
+    width: 50px;
+    left: 160px;
+    margin-right: 10px;
+    top: 5px;
+    margin-top: -10px;
+  }
+}
